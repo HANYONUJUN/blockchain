@@ -6,9 +6,12 @@
     "compilerOptions": {
         "outDir": "build",      // outDir = 자바스크립트 파일이 생성될 디렉터리를 저장
         "target": "es6",         //target = 어떤 버전의 자바스크립트로 내가 타입스크립트를 컴파일하고 싶은지 나타냄
-        "lib": ["es6", "DOM"] 
+        "lib": ["es6"], 
         // lib = 합쳐진 라이브러리의 정의 파일을 특정해주는 역할
         // es6를 지원하는 서버와, DOM, 즉 브라우저 환경에서 코드를 실행시킴
         // typescript에게 코드가 어디서 동작할 것인지를 알려줄 수 있음
+        "strict": true, // strict : true = 타입스크립트가 모든 실수로부터 보호해줌
+        "esModuleInterop": true,
+        "module": "CommonJS"
     }
 }
